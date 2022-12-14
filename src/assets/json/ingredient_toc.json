@@ -1,0 +1,191 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "judul_materi": "Administrasi Pelatihan",
+      "nama_materi": "Materi 1",
+      "deskripsi": "Kegiatan ini membekali Peserta dengan kemampuan menerangkan administrasi pelatihan melalui pembelajaran konsep administrasi pelatihan, komponen administrasi pelatihan mulai dari tahap persiapan, pelaksanaan sampai dengan tahap penyelesaian pelatihan. Kegiatan ini dilakukan secara mandiri dan juga dilakukan dengan mengunduh dan mempelajari materi, menyimak video melalui situs pembelajaran e-learning.",
+      "label": "materi_1",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 1, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1fIaKfVWAvCzydLGoqn-J8-oZB2VDeZuZ/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "judul_materi": "Etika dan Integritas dalam Pelatihan",
+      "nama_materi": "Materi 2",
+      "deskripsi": "Modul Etika dan Integritas dalam Pelatihan membekali penyelenggara pelatihan kemampuan untuk mensimulasikan etika dan integritas dalam penyelenggaraan pelatihan melalui pembelajaran konsep dasar etika dan integritas, personal branding dalam penyelenggaraan pelatihan serta penerapan etika dan integritas pada penyelenggaraan pelatihan.",
+      "label": "materi_2",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 2, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1YBSlAFfnXCRue8-Xa_XfrBo4svFqoMOf/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "judul_materi": "Etos Kerja Pelayanan",
+      "nama_materi": "Materi 3",
+      "deskripsi": "Salah satu tugas dan fungsi LAN yang berkenaan dengan pengendalian kualitas (Quality control) penyelenggaraan pelatihan di seluruh lembaga/badan pelatihan kementerian, lembaga serta pemerintah pusat dan daerah adalah pemberian akreditasi lembaga pelatihan dimana salah satu unsur penilaian akreditasi adalah sumber daya penyelenggara kepelatihan yang profesional.",
+      "label": "materi_3",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 3, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/10envjKInQoqBPEzDN5Xu2RFUrHnh4rmY/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "judul_materi": "Protokol dan Kehumasan dalam Pelatihan",
+      "nama_materi": "Materi 4",
+      "deskripsi": "Mata pelatihan ini membekali peserta dengan kompetensi untuk mensimulasikan pengaturan keprotokolan penyelenggaraan pelatihan serta melatih peserta dalam mewujudkan citra lembaga penyelenggara pelatihan. Adapun metode yang digunakan dalam pembelajaran modul ini adalah pembelajaran mandiri yang mengharuskan peserta untuk membaca modul dan mensimulasikan kegiatan Keprotokolan dan Kehumasan secara mandiri. Pelatihan ini dilaksanakan secara elektronik dengan tahapan mandiri dan synchronous. Pembelajaran ini dilakukan dengan mengunduh dan mempelajari bahan pelatihan, menyimak video serta mengikuti pembelajaran secara synchronous melalui situs pembelajaran elektronik.",
+      "label": "materi_4",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 4, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1vMU-1aWxApCdHTgwvvuv03Zp7Y4iNE8_/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "judul_materi": "Sistem Informasi Pelatihan",
+      "nama_materi": "Materi 5",
+      "deskripsi": "Pembelajaran mata pelatihan ini membekali peserta dengan kemampuan mengelola sistem informasi pelatihan sebagai faktor pendukung yang harus dimiliki oleh lembaga pelatihan dan juga salah satu unsur pada akreditasi lembaga pelatihan. Pada mata pelatihan ini peserta akan mempelajari tentang pemanfaatan sistem informasi pelatihan, smartbangkom dan e-training management.",
+      "label": "materi_5",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 5, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1TSp_ooFCfvc4J0dBt4FXccOp72AEw4mm/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "judul_materi": "Koordinasi Tim Building dalam Pelatihan",
+      "nama_materi": "Materi 6",
+      "deskripsi": "Mata pelatihan ini membekali peserta dengan kemampuan untuk mensimulasikan koordinasi dan team building dalam penyelenggaraan pelatihan melalui pembelajaran konsep, teknik-teknik koordinasi dan team building dalam penyelenggaraan pelatihan. Mata pelatihan dilakukan secara mandiri dan synchronous dalam jaringan. Pembelajaran dilakukan dengan mengunduh dan mempelajari bahan pelatihan, menyimak video serta mengikuti diskusi interaktif melalui situs pembelajaran e-learning.",
+      "label": "materi_6",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 6, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/14byQg1cGAupqlZVR3gIHktdkVemlKaUN/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "judul_materi": "Pengelolaan Pelayanan Pendukung Pelatihan (barjas, non barjas, sarana, pra sarana)",
+      "nama_materi": "Materi 7",
+      "deskripsi": "Mata Pelatihan ini membekali Peserta dengan kemampuan untuk menjelaskan pengelolaan pelayanan pendukung pelatihan, melalui jenis pelayanan pendukung dan pengadaan pelayanan pendukung. Mata pelatihan disajikan dengan interaktif dengan mengeksplorasi kemampuan peserta untuk menentukan layanan pendukung pelatihan yang mungkin dibutuhkan. Metode yang dipakai diantaranya sharing, diskusi, simulasi dan kerja kelompok. Keberhasilan peserta dilihat dari kemampuan menjelaskan jenis-jenis pendukung pelatihan dan mekanisme pemehunan pelayanan pendukung pelatihan. Fokus diskusi diantaranya adalah pengertian dan kegunaan Sarana dan Prasarana Pelatihan sebagai salah satu layanan pendukung pelatihan, syarat-syarat penataan Sarana dan Prasarana Pelatihan, keterkaitan penataan Sarana dan Prasarana Pelatihan dengan strategi pembelajaran dan penempatan peralatan Sarana dan Prasarana Pelatihan/media di dalam kelas, serta Teknik Penataan Sarana dan Prasarana Pelatihan. Gambaran pentingnya Fasilitas Pelatihan dalam dukungan pelayanan kelas oleh penyelenggara Pelatihan dieksplorasi lebih dalam.",
+      "label": "materi_7",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 7, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1-Qse4YAL6V7NfxERLTrU8wyCT853hjA0/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "judul_materi": "Sistem Manajemen Keselamatan dan Kesehatan Kerja Pada Lembaga Pelatihan (K3)",
+      "nama_materi": "Materi 8",
+      "deskripsi": "Modul ini berjudul Sistem Manajemen Keselamatan dan Kesehatan Kerja Pada Lembaga Pelatihan. Materi yang disampaikan dalam modul ini dimaksudkan sebagai acuan dalam penerapan manajemen keselamatan dan Kesehatan kerja (K3) di lembaga-lembaga pelatihan. Secara garis besar modul ini menjelaskan tentang gambaran singkat sistem manajemen keselamatan dan Kesehatan kerja di lembaga pelatihan, identifikasi bahaya di tempat kerja, serta cara melakukan penilaian risiko K3 di tempat kerja.",
+      "label": "materi_8",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 8, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/17-ovtQKLdn-ZoDImNjT1fwZySqRSXYSG/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "judul_materi": "Pelayanan Prima (Excellent Service)",
+      "nama_materi": "Materi 9",
+      "deskripsi": "Mata pelatihan ini membekali Peserta dengan kemampuan menjelaskan penerapan pelayanan prima dalam konteks pelatihan, melalui pembelajaran konsep pelayanan prima, ragam kebutuhan stakeholder pelatihan dan penerapan pelayanan prima dalam konteks pelatihan. Pembelajaran mata pelatihan ini dilakukan secara mandiri. Pembelajaran dalam mata pelatihan ini dilakukan dengan mengunduh dan mempelajari bahan pelatihan, menyimak video, serta mengerjakan tugas-tugas sebagai latihan maupun sebagai output pembelajaran.",
+      "label": "materi_9",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 9, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1zXjWEGBk-PlJFYt7fy_31mh__sVZ_G66/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "judul_materi": "Monitoring dan Evaluasi",
+      "nama_materi": "Materi 10",
+      "deskripsi": "Materi ini membekali peserta dengan kemampuan untuk menjelaskan monitoring dan evaluasi melalui pembelajaran konsep monitoring dan evaluasi, dan penjaminan mutu, mekanisme pengelolaan pengaduan. Materi akan diberikan sebanyak 3 jam pelajaran dengan metode asynchronous.",
+      "label": "materi_10",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 10, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1BLXM9qeI6R2yKjMIcC75p6zU8zVjLc8c/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "judul_materi": "Penyusunan laporan Pelatihan dan Pengelolaan Hasil Pembelajaran",
+      "nama_materi": "Materi 11",
+      "deskripsi": "Mata pelatihan ini dimaksudkan membekali peserta untuk meningkatkan kompetensinya sebagai Penyelenggara pelatihan agar memiliki persepsi yang sama dalam hal pengertian dan implementasi penyusunan laporan pelatihan, serta pengertian pengelolaan hasil pembelajaran dan implementasi pengelolaan hasil pembelajaran. Diharapkan nantinya sebagai Penyelenggara pelatihan dapat memahami pengertian, manfaat penyusunan laporan pelatihan dan pengelolaan hasil pembelajaran.",
+      "label": "materi_11",
+      "sub_materi": [],
+      "bahan": [
+        {
+          "id": 11, 
+          "label": "Modul PDF", 
+          "url": "https://drive.google.com/file/d/1jGwsrRePaggiQzi04QzEOYBwngjJyn2k/preview",
+          "type": "file url/link",
+          "point": 1
+        }
+      ]
+    }
+  ]
+}

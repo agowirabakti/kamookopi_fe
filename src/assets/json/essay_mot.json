@@ -1,0 +1,239 @@
+{
+  "essays": [
+    {
+      "id": 1,
+      "materi": "Manajemen Lembaga Penyelenggara Pelatihan",
+      "soal": [
+        {
+          "id": 1,
+          "judul": null,
+          "isi_1": "Setelah proses analisis kebutuhan pelatihan, unit A membutuhkan pelatihan terkait pengolahan data base. Pelatihan ini didesain dengan metode pelatihan lebih banyak praktik. Anda adalah seorang fasilitator dalam pelatihan ini dan anda diminta menyusun skema pembelajaran 70:20:10 untuk pelatihan ini, dan menurut Anda tipe pembelajar yang seperti apa cocok dengan pelatihan ini?",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "materi": "Analisis Kebutuhan Pelatihan dan RBPP",
+      "soal": [
+        {
+          "id": 2,
+          "judul": null,
+          "isi_1": "Jelaskan empat macam struktur penjabaran perilaku umum kedalam perilaku khusus dalam analisis pembelajaran!",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": []
+        },
+        {
+          "id": 3,
+          "judul": null,
+          "isi_1": "Berikut ini adalah profil kompetensi manajerial dari seluruh pejabat (jumlah pejabat = 30 orang) pada suatu level jabatan dari suatu unit organisasi yang memiliki tugas dan fungsi menyelenggarakan pendidikan, pelatihan, dan sertifikasi kompetensi. Unit organisasi tersebut saat ini sedang dalam proses perubahan menuju perwujudan corporate university.",
+          "isi_2": "link : https://bit.ly/3sJop1s (lihat soal ini)",
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Apa saja langkah-langkah yang Anda lakukan dalam melaksanakan penugasan tersebut?",
+            "Lakukanlah langkah-langkah yang Anda sebutkan tersebut untuk data pada tabel di atas!",
+            "Apa saja simpulan dan saran yang Anda hasilkan dari hasil penugasan tersebut? (sertakan dengan argumen yang meyakinkan)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "materi": "Perencanaan dan Penganggaran Program Pelatihan",
+      "soal": [
+        {
+          "id": 4,
+          "judul": null,
+          "isi_1": "Sebuah satuan kerja merencanakan untuk melakukan pelatihan terkait dengan Pengelolaan Pelatihan Berbasis E-learning. Pelatihan akan diselenggarakan pada bulan Juni tahun 2023.",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Jelaskan alasan kenapa pelatihan tersebut perlu dilakukan dan bagaimana akan dilakukan (What, Why, When, Who, How)",
+            "Identifikasi kebutuhan pendanaan untuk pelatihan tersebut dengan asumsi apabila diasumsikan (Pelatihan diasramakan, Peserta dari seluruh Indonesia, Pengajar berasal dari Internal organisasi)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "materi": "Penyelenggaraan Program Pelatihan",
+      "soal": [
+        {
+          "id": 5,
+          "judul": null,
+          "isi_1": "Penyelenggaraan program pelatihan tidak lepas dari kebutuhan SDM Pelatihan atau yang biasa disebut tenaga pelatihan. Banyak istilah atau sebutan bagi tenaga pelatihan.",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Menurut Saudara siapa sajakah yang termasuk dalam SDM Pelatihan?",
+            "Untuk mencapai efektivitas dan efisiensi penyelenggaraan program pelatihan, penggunaan teknologi informasi dan komunikasi (TIK) sebagai bentuk kreativitas dan inovasi dapat dilakukan (diperankan) oleh SDM Pelatihan tersebut. Sebagai contoh pengelola/penyelenggara pelatihan dapat membuat aplikasi online dalam kegiatan evaluasi program, evaluasi penyelenggaraan, evaluasi terhadap fasilitator/narasumber, dan evaluasi pasca-pelatihan. Saudara diminta mengidentifikasi peran SDM Pelatihan dalam penggunaan teknologi informasi dimaksud sesuai peran dan tugas masing-masing"
+          ]
+        },
+        {
+          "id": 6,
+          "judul": "SOAL KASUS. Perhatikan kasus penyelenggaraan pelatihan berikut :",
+          "isi_1": "Sebagai pengelola pelatihan pada lembaga pelatihan terakreditasi di salah satu kementerian, dua minggu menjelang pelaksanaan pembelajaran klasikal, Pak Raden mendapat laporan dari Norman, salah satu staf pelaksana Latsar CPNS bahwa ada 3 dari 40 orang peserta Latsar yang terpapar covid-19. Satu di antaranya harus melakukan perawatan di Wisma Atlit Kemayoran karena bergejala berat, sedangkan 2 orang peserta lainnya melakukan isolasi mandiri (isoman) di rumah.",
+          "isi_2": "Penyelenggaraan Latsar CPNS di lembaga pelatihan tersebut menggunakan desain blended learning. Kegiatan pelatihan diawali dengan kegiatan Penguatan Kompetensi Teknis Bidang Tugas (PKTBT, kemudian melaksanakan pembelajaran mandiri selama 16 hari @ 3 jp dengan MOOC (Massive Open Online Courses) yang dikelola oleh Lembaga Administrasi Negara (LAN), dilanjutkan dengan tahapan pembelajaran daring Agenda 1, 2, 3, dan 4 dimana penyelenggaraannya terintegrasi dengan LMS Kolabjar LAN (Smartbangkom). Sebelum tahapan implementasi aktualisasi di tempat kerja peserta selama 30 hari kerja, para peserta mengikuti Seminar Rancangan Aktualisasi. Setelah itu, peserta akan mengikuti pembelajaran klasikal selama 6 hari yang di dalamnya termasuk kegiatan penutupan Latsar.",
+          "isi_3": "Sebagai informasi, setiap penyelenggaraan kegiatan yang melibatkan banyak peserta dalam bentuk tatap muka langsung (luring), panitia penyelenggara wajib meminta persetujuan Ketua Satgas Covid-19 Kementerian dimaksud. Perlu diketahui juga bahwa menurut informasi dari instansi pembina (LAN), bahwa penyelenggaraan Latsar CPNS di kementerian tersebut merupakan yang pertama kali menggunakan desain blended learning.",
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Apakah masalah pokok dalam kasus tersebut?",
+            "Siapa saja aktor yang terlibat dan apakah peran masing-masing aktor?",
+            "Sebagai atasan dari Pak Raden, langkah apakah yang dapat Anda lakukan untuk melakukan transformasi pembelajaran klasikal menjadi pembelajaran jarak jauh (virtual classroom) dari Perspektif Dynamic Governance (thinking ahead, thinking again, dan thinking across). Thinking ahead (berfikir ke depan/visioner dan antisipatif), thinking again (secara sustain melakukan revisi, merupakan never ending process activity), dan thinking across (mengambil lesson learned dari keberhasilan negara lain/instansi lain untuk diadopsi atau diadaptasi atau direplikasi)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "materi": "Manajemen Mutu Pelatihan",
+      "soal": [
+        {
+          "id": 7,
+          "judul": "PENTINGNYA PENGELOLAAN ARSIP DALAM MEWUJUDKAN PEMERINTAHAN BERBASIS DIGITAL",
+          "isi_1": "Senin, 7 Juni 2021 – Pusat Pendidikan dan Pelatihan Badan Riset dan Inovasi Nasional (Pusdiklat BRIN) bekerjasama dengan Pusat Pendidikan dan Pelatihan Arsip Nasional Republik Indonesia (Pusdiklat ANRI) kembali menyelenggarakan pelatihan Pengelolaan Arsip Dinamis (PAD) Angkatan III Tahun 2021 bagi pegawai di lingkungan BRIN. Pembukaan pelatihan PAD yang dilaksanakan secara daring ini dihadiri oleh Sekretaris Utama ANRI – Imam Gunarto, Kepala Pusdiklat Kemenristek/BRIN – Wisnu S Soenarso, Pejabat di lingkungan BRIN dan ANRI, Fasilitor penyelenggaraan Diklat Teknis Pusdiklat ANRI, dan peserta pelatihan yang berjumlah 30 orang.",
+          "isi_2": "Pelatihan ini secara resmi dibuka oleh Sestama ANRI, dalam pengarahannya Imam Gunarto menyampaikan bahwa pengelolaan arsip sangat penting dalam tatakelola organisasi terutama dalam menyongsong pemerintahan berbasis digital. Desain sistem kearsipan organisasi sangat mempengaruhi jalannya sebuah organisasi. Peran arsiparis dan sistem kearsipan terutama dalam penggabungan organisasi yang sedang dialami oleh BRIN dan persiapan perpindahan ibukota negara sangat krusial.",
+          "isi_3": "Kedepannya seluruh pengelolaan kearsipan akan dilaksanakan secara digital. Data kearsipan akan tersimpan dalam satu data center yang dikelola oleh Kementerian Kominfo. Terkait dengan hal tersebut ANRI telah mempersiapkan aplikasi dan mekanisme untuk mengintegrasikan data kearsipan seluruh kementerian dan lembaga pemerintahan. Kementerian dan Lembaga pemerintah perlu melakukan pendataan arsip-arsip, kemudian melakukan pendaftaran, pengolahan, dan melakukan digitalisasi arsip yang dimilikinya. Dengan melakukan digitalisasi arsip, maka diharapkan jalannya pemerintahan akan menjadi lebih efektif dan efisien.",
+          "isi_4": "Pada kesempatan yang sama, Kepala Pusdiklat, Wisnu S. Soenarso, menyampaikan terimakasih kepada pusdiklat ANRI atas fasilitasi pelatihan pengelolaan arsip dinamis",
+          "isi_5": "https://pusdiklat.brin.go.id/2021/06/pentingnya-pengelolaan-arsip-dalam-mewujudkan-pemerintahan-berbasis-digital/",
+          "petunjuk": [
+            "Membaca artikel di atas, anda sebagai seorang  Tim Penilai  Akreditasi   Program, yang akan melakukan penilian  terhadap kelayakan   program pelatihan tersebut,  instrumen penilaian apa saja yang akan anda  siapkan untuk menilai program pelatihan dimaksud"
+          ]
+        },
+        {
+          "id": 8,
+          "judul": null,
+          "isi_1": "Penyelenggara  pelatihan   mempunyai  keharusan dalam menerapkan  menajeman mutu terpadu.  Penerapan Manajemen Mutu Terpadu pada instansi penyelenggara pelatihan  diharapkan akan meningkatkan kualitas  produk atau jasa, pelatihan yang diselenggarakan  menjadi lebih  baik lagi, dan perencanaan  pelatihan seperti  penyusunan anggaran  biaya-biaya akan semakin  selaras, efektif, efisien dan berhasil guna. Dengan  penerapan  mutu terpadu, diharapkan juga akan meningkatkan konsistensi kinerja dan kompetensi sehingga mampu   bertahan dan bersaing di  pasar  global.  Menurut  pendapat saudara  apakah yang dimaksud  dengan manajemen  mutu terpadu dan mengapa manajemen  mutu terpadu itu penting menurut Sallis (2002).",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "materi": "Kemitraan dan Hubungan Pemangku Kepentingan dalam Penyelenggaraan Pelatihan",
+      "soal": [
+        {
+          "id": 9,
+          "judul": null,
+          "isi_1": "URAIKAN RENCANA SAUDARA DALAM MEMBANGUN KEMITRAAN DENGAN STAKEHOLDER DALAM PENGEMBANGAN KOMPETENSI UNTUK ASN DI INSTANSI ANDA. POIN YANG PERLU DI URAIKAN",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "LEMBAGA MITRA YANG HENDAK DITUJU",
+            "RUANG LINGKUP KEMITRAAN YANG HENDAK DIKERJAKAN",
+            "TUJUAN DAN MANFAAT KEMITRAAN DENGAN LEMBAGA TERSEBUT"
+          ]
+        },
+        {
+          "id": 10,
+          "judul": null,
+          "isi_1": null,
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Bagaimana strategi dan design langkah-langkah mengembangkan kemitraan melalui pemangku kepentingan nasional, internasional atau gabungan nasional internasional untuk suatu kegiatan serta program.",
+            "Buat rancangan kemitraan pelatihan nasional, internasional atau gabungan keduanya dari institusi masing-masing sedapat mungkin pada unit kerja instansi masing-masing peserta.",
+            "Bila telah ada kemitraan yang telah dilaksanakan lakukan rancangan monitoring dan evaluasi dengan menggunakan pola siklus manajemen penyelenggaran pelatihan",
+            "Buatkan analisis berdasarkan data hasil monotoring dan evaluasi salah satu pelatihan yang telah dilaksanakan, meliputi kendala yang dihadapi dan alternative penyelesaiannya."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "materi": "Pelatihan Berbasis Digital",
+      "soal": [
+        {
+          "id": 11,
+          "judul": null,
+          "isi_1": "Terdapat beberapa Model dan Format Pelatihan Berbasis Digital yang dikenal saat ini. Menurut Saudara, Model dan Format apa yang paling sering diterapkan di instansi Saudara? Jelaskan alasannya! Apakah penerapannya sudah tepat? Jika belum tepat, Model dan Format apa yang seharusnya diterapkan? Jelaskan Alasannya!",
+          "isi_2": null,
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "materi": "Inovasi dan Manajemen Pengetahuan",
+      "soal": [
+        {
+          "id": 12,
+          "judul": null,
+          "isi_1": "Nyatakan permasalahan yang dialami oleh organisasi Anda",
+          "isi_2": "Apa yang perlu dilakukan agar organisasi menjadi lebih baik dalam kaitannya dengan penggunaan pengetahuan dan berbagi pengetahuan",
+          "isi_3": null,
+          "isi_4": null,
+          "isi_5": null,
+          "petunjuk": [
+            "Terkait dengan bisnis proses",
+            "Infastruktur atau teknologi yang digunakan",
+            "Budaya atau aspek people"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "materi": "Evaluasi Pelatihan",
+      "soal": [
+        {
+          "id": 13,
+          "judul": "Kinerja instansi pemerintah semakin terpuruk di masa pandemic covid19",
+          "isi_1": "Kondisi Pandemi Covid mengharuskan instansi Diklat pemerintah seluruh Kementerian Lembaga di pusat dan OPD daerah melakukan kegiatan pelatihan yang semula klasikal atau tatap muka menjadi pembelajaran tatap maya (DARNG=dalam jaringan). Tidak dipungkiri kondisi pandemi berdampak pada penurunan aktivitas layanan public yang selama ini dilaksanakan secara regular demi menghindari terjadinya rantai penularan penyakit covid19. KOndisi saat ini mendorong seluruh jajaran instansi diklat  pemerintah bergerak  untuk merealisasikan target dan sasaran kinerja organisasinya.",
+          "isi_2": "Pelatihan Kepemimpinan Administrator (PKA) yang dilaksanakan dengan mengacu pada Keputusan Kepala Lembaga Administrasi Negara Nomor 1008/K.1/PDP.07/2019 Tentang Kurikulum Pelatihan Kepemimpinan Administrator. Berdasarkan regulasi tersebut pelaksanaan PKA dilakukan secara tatap muka atau klasikal. Namun pada tahun 2020 dan tahun 2021 pelaksanaan PKA tdak dapat dilakukan secara klasikal karena Indonesia masih dihadapkan pada kondisi pandemic Covid 19 sementara  belum ada ketentuan khusus yang mengatur pelaksanaan PKA secara DARING maka dilakukanlah adaptasi proses pembelajaran dari klasikal atau LURING menjadi DARING.",
+          "isi_3": "Pada pelaksanaan PKA tahun 2020 d Lembaga Diklat Kementerian “X” dilath sejumlah 40 orang peserta yang berasal dari kementerian tersebut. Pelatihan diselenggarakan pada Bulan Februari Tahun 2020 secara klasilan  dan pada minggu ke-dua pelaksanaan kegiatan terjadi perubahan karena adanya kasus covid masuk ke Indonesia dan Provinsi DKI Jakarta menerapkan PSBB maka secara mendadak pelathan klasikal berubah menjadi online atau DARING. Penyelenggara secara cepat melakukan adaptas untuk beralih ke pembelajaran DARING yang saat tersebut belum terbiasa. Selan kerepotan yanag dihadapi penyelenggara untuk mempersiapkan pelaksanaan pPKA scr DARING, menyapkan para fasilitator yang belum pernah menggunakan aplkasi zoom meeting—google meet—google classroom serta sejumlah peserta uyang juga di anataranya sulit beradaptasi dengan perubahan yang harus dilakukan.Tanpa ada jedah waktu secara khusus pembelajaran LURING beralh menjadi DARING dilaksanakan secara berkesinambungan dan  penyesuaan-penyesuaian dilakukan sambal berjalannya proses pembelajaran.",
+          "isi_4": "Pengenalan terhadap pembelajaran synkronous dan asynkronous di mulai. Pembelajaran Agenda 1 sudah dilaksanakan secara LURING dan lanjut dengan pembelajaran Agenda II dilaksanakan secara DARING, fasilitator berupaya untuk memberikan pembejaran melalui kelas virtual atau maya dengan aplikasi zoom meeting dan dilegkapi dengan google classroom sebagai media pembelajaran untuk penyelenggara dan fasilitator mengyampaikan tugas-tugas dan selanjutnya peserta menyerahkan tugasnya menggunakan google classroom sebagai Learning Management System (LMS) nya. Setelah Agenda II selesai dilanjutkan dengan Agenda II dan peserta pun akhirnya mulai terbiasa denga cara belajar DARING  sementara afasltator masih bergejolak karena fasiltator tiap agenda merupakan orang yang berbeda. Begitu juga dengan pembelajaran Agenda 4 yang dilaksanakan secara DARING juga mulai dari pembekalan hingga pembmbngan dan seminar rancangan Aksi Perubahan.",
+          "isi_5": "Pelaksanaan Studi lapangan pun dilakukan secara virtual dengan mengajak peserta mengikut Studi lapangan secara terpisah denga lokus tempat pelaksanaan studi lapangan.Pada aktivitas belajar tersebut terasa sangat sulit untuk dilaksanakan meskipun pihak lokus sudah berupaya dengan menghadirkan video rekaman yang menggambarkan proses pembuatannya. Berdasarkan hasil evaluasi fasilitator dan evaluasi penyelenggaraan diperoleh gambaran hasil seperti berikut ini. Sebagian besar peserta belum merasa nyaman dengan pembelajaran DARING  namun Sebagian peserta menyukai. Hal yang sama terjadi dengan fasilitator dan peserta. Sebagian ada yang menikmati proses pembelaajarannya sementara.",
+          "petunjuk": [
+            "Mengidetifikasi fakta, konsep yang terdapat dalam kasus/ masalah",
+            "Menghubungkan berbagai maslaha yang terkait dalam satu disiplin atau lintas disiplin ilmu",
+            "Menyimpulkan setiap permasalahan yang ada (masih bersifat hipotesis)",
+            "Menyusun alternative pemecahan masalah",
+            "Menetapkan dan melakukan pemecahan masalah sesuai dengan disiplin ilmu (substansi kajian)"
+          ]
+        },
+        {
+          "id": 14,
+          "judul": "Kinerja instansi pemerintah semakin terpuruk di masa pandemic covid19 - Soal Kasus",
+          "isi_1": "Kondisi Pandemi Covid mengharuskan instansi Diklat pemerintah seluruh Kementerian Lembaga di pusat dan OPD daerah melakukan kegiatan pelatihan yang semula klasikal atau tatap muka menjadi pembelajaran tatap maya (DARNG=dalam jaringan). Tidak dipungkiri kondisi pandemi berdampak pada penurunan aktivitas layanan public yang selama ini dilaksanakan secara regular demi menghindari terjadinya rantai penularan penyakit covid19. KOndisi saat ini mendorong seluruh jajaran instansi diklat  pemerintah bergerak  untuk merealisasikan target dan sasaran kinerja organiisasinya.",
+          "isi_2": "Pelatihan Kepemimpinan Administrator (PKA) yang dilaksanakan dengan mengacu pada Keputusan Kepala Lembaga Administrasi Negara Nomor 1008/K.1/PDP.07/2019 Tentang Kurikulum Pelatihan Kepemimpinan Administrator. Berdasarkan regulasi tersebut pelaksanaan PKA dilakukan secara tatap muka atau klasikal. Namun pada tahun 2020 dan tahun 2021 pelaksanaan PKA tdak dapat dilakukan secara klasikal karena Indonesia masih dihadapkan pada kondisi pandemic Covid 19 sementara  belum ada ketentuan khusus yang mengatur pelaksanaan PKA secara DARING maka dilakukanlah adaptasi proses pembelajaran dari klasikal atau LURING menjadi DARING.",
+          "isi_3": "Pada pelaksanaan PKA tahun 2020 d Lembaga Diklat Kementerian “X” dilath sejumlah 40 orang peserta yang berasal dari kementerian tersebut. Pelatihan diselenggarakan pada Bulan Februari Tahun 2020 secara klasilan  dan pada minggu ke-dua pelaksanaan kegiatan terjadi perubahan karena adanya kasus covid masuk ke Indonesia dan Provinsi DKI Jakarta menerapkan PSBB maka secara mendadak pelathan klasikal berubah menjadi online atau DARING. Penyelenggara secara cepat melakukan adaptas untuk beralih ke pembelajaran DARING yang saat tersebut belum terbiasa. Selan kerepotan yanag dihadapi penyelenggara untuk mempersiapkan pelaksanaan pPKA scr DARING, menyapkan para fasilitator yang belum pernah menggunakan aplkasi zoom meeting—google meet—google classroom serta sejumlah peserta uyang juga di anataranya sulit beradaptasi dengan perubahan yang harus dilakukan.Tanpa ada jedah waktu secara khusus pembelajaran LURING beralh menjadi DARING dilaksanakan secara berkesinambungan dan  penyesuaan-penyesuaian dilakukan sambal berjalannya proses pembelajaran.",
+          "isi_4": "Pengenalan terhadap pembelajaran synkronous dan asynkronous di mulai. Pembelajaran Agenda 1 sudah dilaksanakan secara LURING dan lanjut dengan pembelajaran Agenda II dilaksanakan secara DARING, fasilitator berupaya untuk memberikan pembejaran melalui kelas virtual atau maya dengan aplikasi zoom meeting dan dilegkapi dengan google classroom sebagai media pembelajaran untuk penyelenggara dan fasilitator mengyampaikan tugas-tugas dan selanjutnya peserta menyerahkan tugasnya menggunakan google classroom sebagai Learning Management System (LMS) nya. Setelah Agenda II selesai dilanjutkan dengan Agenda II dan peserta pun akhirnya mulai terbiasa denga cara belajar DARING  sementara afasltator masih bergejolak karena fasiltator tiap agenda merupakan orang yang berbeda. Begitu juga dengan pembelajaran Agenda 4 yang dilaksanakan secara DARING juga mulai dari pembekalan hingga pembmbngan dan seminar rancangan Aksi Perubahan. Pelaksanaan Studi lapangan pun dilakukan secara virtual dengan mengajak peserta mengikut Studi lapangan secara terpisah denga lokus tempat pelaksanaan studi lapangan.Pada aktivitas belajar tersebut terasa sangat sulit untuk dilaksanakan meskipun pihak lokus sudah berupaya dengan menghadirkan video rekaman yang menggambarkan proses pembuatannya.",
+          "isi_5": "Berdasarkan hasil evaluasi fasilitator dan evaluasi penyelenggaraan diperoleh gambaran hasil seperti berikut ini. Sebagian besar peserta belum merasa nyaman dengan pembelajaran DARING  namun Sebagian peserta menyukai. Hal yang sama terjadi dengan fasilitator dan peserta. Sebagian ada yang menikmati proses pembelaajarannya sementara.",
+          "petunjuk": [
+            "Mengidetifikasi fakta, konsep yang terdapat dalam kasus/ masalah",
+            "Menghubungkan berbagai maslaha yang terkait dalam satu disiplin atau lintas disiplin ilmu",
+            "Menyimpulkan setiap permasalahan yang ada (masih bersifat hipotesis)",
+            "Menyusun alternative pemecahan masalah",
+            "Menetapkan dan melakukan pemecahan masalah sesuai dengan disiplin ilmu (substansi kajian)"
+          ]
+        }
+      ]
+    }
+  ]
+}
