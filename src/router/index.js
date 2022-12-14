@@ -11,12 +11,48 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/login',
+    name: 'login',
+    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue')
+  },
+  {
+    path: '/dashboard',
+    // name: 'dashboard',
+    component: () => import(/* webpackChunkName: "about" */ '../views/DashboardView.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'about',
+        component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+        meta: { 
+          requiresAuth: true
+        }
+      },
+      {
+        path: '/F90rVF7OEfhW',
+        name: 'data_master',
+        component: () => import(/* webpackChunkName: "about" */ '../views/adm/DatamasterView.vue'),
+        meta: { 
+          requiresAuth: true
+        }
+      },
+      {
+        path: '/F47JdIHuxXB5',
+        name: 'transaksi',
+        component: () => import(/* webpackChunkName: "about" */ '../views/adm/TransaksiView.vue'),
+        meta: { 
+          requiresAuth: true
+        }
+      },
+      {
+        path: '/Ev787fv9Alri',
+        name: 'laporan',
+        component: () => import(/* webpackChunkName: "about" */ '../views/adm/LaporanView.vue'),
+        meta: { 
+          requiresAuth: true
+        }
+      },
+    ]
   }
 ]
 

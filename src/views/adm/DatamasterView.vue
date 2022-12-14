@@ -2,8 +2,12 @@
   <div>
     <el-breadcrumb separator="/" class="font-4 mb-3">
       <el-breadcrumb-item :to="{ path: '/dashboard' }">Dashboard</el-breadcrumb-item>
-      <el-breadcrumb-item>...</el-breadcrumb-item>
+      <el-breadcrumb-item>Data Master</el-breadcrumb-item>
     </el-breadcrumb>
+    <el-tabs v-model="activeName" class="font-3" type="border-card">
+      <el-tab-pane class="font-4" name="first" label="Data Barang">Data Barang</el-tab-pane>
+      <el-tab-pane class="font-4" name="second" label="Data User">Data User</el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 <script>

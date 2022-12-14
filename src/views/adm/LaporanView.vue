@@ -2,7 +2,7 @@
   <div>
     <el-breadcrumb separator="/" class="font-4 mb-3">
       <el-breadcrumb-item :to="{ path: '/dashboard' }">Dashboard</el-breadcrumb-item>
-      <el-breadcrumb-item>...</el-breadcrumb-item>
+      <el-breadcrumb-item>Laporan</el-breadcrumb-item>
     </el-breadcrumb>
   </div>
 </template>
