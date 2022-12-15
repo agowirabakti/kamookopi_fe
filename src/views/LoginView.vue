@@ -7,7 +7,7 @@
           <p class="font-extrabold text-center text-md font-1 p-0 mx-0 mt-0 mb-2" style="color:#43c59e">Kamookopi</p>
           <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Username" v-model="input"></el-input>
           <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Password" v-model="input" show-password></el-input>
-          <el-button class="w-full" size="small" type="primary">LOGIN</el-button>
+          <el-button class="w-full" size="small" type="primary">LOGIN <font-awesome-icon icon="fa-solid fa-arrow-right-to-bracket" /></el-button>
         </div>
       </div>
     </div>

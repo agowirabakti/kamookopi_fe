@@ -3,12 +3,23 @@
     <div class="big-image">
       <div class="min-w-screen min-h-screen flex items-center justify-center">
         <div class="text-center">
-          <img src="@/assets/img/coffee-beans.png" class="mx-auto" style="width:250px;" alt="">
+          <img src="@/assets/img/coffee-beans.png" class="mx-auto cursor-pointer" @click="getViews('/login')" style="width:250px;" alt="">
           <p class="font-extrabold text-7xl font-1 p-0 mx-0 mt-5 mb-2" style="color:#43c59e">Kamookopi</p>
           <p class="text-lg font-3 p-0 mx-0 mt-0 mb-0" style="color:#3D7068"><span>#AKUKAMOODANMEREKASATU</span> <span>#MengIndonesiakanKamoo</span></p>
-          <p><span class="cursor-pointer"><i class="el-icon-location-outline"></i></span> <span class="cursor-pointer"><font-awesome-icon icon="fa-brands fa-instagram" /></span> <span class="cursor-pointer ml-0.5"><font-awesome-icon icon="fa-brands fa-whatsapp" /></span> <span class="cursor-pointer ml-0.5" @click="getViews('/login')"><font-awesome-icon icon="fa-regular fa-circle-right" /></span></p>
-          <!-- <p class="text-white font-extrabold text-lg leading-none font-1 p-0 mx-0 mt-0 mb-5">Management Of Training & Training Officer Course</p> -->
-          <!-- <button class="inline-block text-yellow-300 font-semibold cursor-pointer hover:bg-yellow-300 hover:text-black border-2 border-yellow-300 rounded-md text-md px-8 py-2 mx-1 my-2" @click="getViews('/login')">LOGIN</button> -->
+          <div class="flex justify-center items-center">
+            <div class="mx-1">
+              <p class="p-0 m-0"><font-awesome-icon icon="fa-solid fa-location-dot" /></p>
+            </div>
+            <div class="mx-1">
+              <p class="text-md p-0 m-0"><font-awesome-icon icon="fa-brands fa-instagram" /></p>
+            </div>
+            <div class="mx-1">
+              <p class="text-md p-0 m-0"><font-awesome-icon icon="fa-brands fa-whatsapp" /></p>
+            </div>
+            <!-- <div class="mx-1">
+              <p class="p-0 m-0"><font-awesome-icon icon="fa-regular fa-circle-right" /></p>
+            </div> -->
+          </div>
         </div>
       </div>
     </div>
