@@ -5,9 +5,15 @@
         <div class="w-64">
           <img src="@/assets/img/coffee-beans_1.png" alt="" class="w-32 mx-auto mb-0.5">
           <p class="font-extrabold text-center text-md font-1 p-0 mx-0 mt-0 mb-2" style="color:#43c59e">Kamookopi</p>
-          <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Username" v-model="input"></el-input>
-          <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Password" v-model="input" show-password></el-input>
-          <el-button class="w-full" size="small" @click="getViews('/dashboard')" type="primary">LOGIN <font-awesome-icon icon="fa-solid fa-arrow-right-to-bracket" /></el-button>
+          <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Username" v-model="input.username"></el-input>
+          <el-input class="font-4 p-0 mx-0 mt-0 mb-1" placeholder="Password" v-model="input.password" show-password></el-input>
+          <!-- <el-button class="w-full" size="small" @click="login" type="primary">LOGIN <font-awesome-icon icon="fa-solid fa-arrow-right-to-bracket" /></el-button> -->
+          <div v-if="input.username == null || input.password == null">
+            <el-button class="w-full" type="primary" disabled>LOGIN</el-button>
+          </div>
+          <div v-if="input.username != null && input.password != null">
+            <el-button class="w-full" type="primary" @click="login" :loading="get_loading">LOGIN</el-button>
+          </div>
         </div>
       </div>
     </div>
@@ -17,7 +23,17 @@
 export default {
   data() {
     return {
-      input: null
+      input: {username: null, password: null},
+      testing: null,
+      msg: null
+    }
+  },
+  computed: {
+    get_message() {
+      return this.$store.state.message
+    },
+    get_loading() {
+      return this.$store.state.loading
     }
   },
   methods: {
@@ -25,6 +41,23 @@ export default {
       if (this.$route.path !== value) {
         this.$router.push(value);
       }
+    },
+    login: function(){
+      const username = this.input.username;
+      const password = this.input.password;
+      this.$store.dispatch('login', { username, password })
+      .then(() => {
+        // this.testing = response.data;
+        this.$router.push('/dashboard');
+        // this.check.username = true;
+        // this.check.password = false;
+        this.input.username = null;
+        this.input.password = null;
+      })
+      .catch(error => {
+        console.log(error);
+        // this.msg = error.response.data.error_description
+      })
     }
   }
 }

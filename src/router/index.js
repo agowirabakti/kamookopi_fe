@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Store from '../store'
 
 Vue.use(VueRouter)
 
@@ -8,12 +8,15 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: () => import(/* webpackChunkName: "about" */ '../views/HomeView.vue')
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue'),
+    meta: {
+      requiresVisitor: true,
+    }
   },
   {
     path: '/dashboard',
@@ -60,6 +63,20 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!Store.getters.isLoggedIn) {
+      next({ path: '/login' })
+    }
+    next()
+  } else if (to.matched.some(record => record.meta.requiresVisitor)) {
+    if (Store.getters.isLoggedIn) {
+      next({ path: '/dashboard' })
+    }
+    next()
+  }
 })
 
 export default router

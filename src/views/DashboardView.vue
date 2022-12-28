@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="">
-            <p class="font-1 text-xs uppercase cursor-pointer p-0 m-0"><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /> LOGOUT</p>
+            <p class="font-1 text-xs uppercase cursor-pointer p-0 m-0" @click="logout"><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /> LOGOUT</p>
           </div>
         </div>
       </el-col>
@@ -46,6 +46,12 @@ export default {
       if (this.$route.path !== value) {
         this.$router.push(value);
       }
+    },
+    logout: function () {
+      this.$store.dispatch('logout')
+      .then(() => {
+        this.$router.push({name: 'login'})
+      })
     },
   },
 }
