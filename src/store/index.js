@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Axios from 'axios'
 import pengguna from './modules/user'
+import barang from './modules/barang'
 
 Vue.use(Vuex)
 
@@ -71,6 +72,7 @@ export default new Vuex.Store({
     },
   },
   modules: {
-    pengguna
+    pengguna,
+    barang
   }
 })

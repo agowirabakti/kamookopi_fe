@@ -7,11 +7,33 @@
     <el-tabs v-model="activeName" class="font-3" type="border-card">
       <el-tab-pane class="font-4" name="first" label="Data Barang">
         <div>
-          <div v-if="get_loading">
+          <div v-if="get_loading_1">
             <i class="el-icon-loading"></i>
           </div>
-          <div v-if="!get_loading">
-            ...
+          <div v-if="!get_loading_1">
+            <div class="flex justify-end mb-2">
+              <div>
+                <el-button type="primary" size="mini" @click="open_dialogvisiblebarang"><i class="el-icon-plus"></i> Tambah Barang</el-button>
+              </div>
+            </div>
+            <div v-for="(item, index) in get_barangs" :key="index">
+              <div class="flex justify-between items-center py-2 hover:bg-gray-50 cursor-pointer border-b">
+                <div class="w-24">
+                  <p class="font-4" v-if="item.kode_barang == null">Tidak kode barang</p>
+                  <p class="font-4 uppercase" v-if="item.kode_barang != null">{{ item.kode_barang }}</p>
+                </div>
+                <div class="flex-grow w-24">
+                  <p class="font-4" v-if="item.nama_barang == null">Tidak nama barang</p>
+                  <p class="font-4" v-if="item.nama_barang != null">{{ item.nama_barang }}</p>
+                </div>
+                <div class="ml-0.5">
+                  <el-button size="mini" circle @click="open_updatedialogvisiblebarang(item.id, item.nama_barang)"><i class="el-icon-edit"></i></el-button>
+                </div>
+                <div class="ml-0.5">
+                  <el-button size="mini" @click="open_deletedialogvisiblebarang(item.id, item.nama_barang)" circle><i class="el-icon-delete"></i></el-button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </el-tab-pane>
@@ -106,6 +128,41 @@
         <el-button type="danger" size="mini" :loading="get_loading" @click="submit_deletedialogvisible(user.id)">Delete</el-button>
       </span>
     </el-dialog>
+    <el-dialog title="Tambah Barang" :visible.sync="dialogvisiblebarang" width="50%" :before-close="close_dialogvisiblebarang">
+      <div>
+        <el-form>
+          <el-form-item label="Nama Barang" :label-width="formLabelWidthBarang">
+            <el-input v-model="form.nama_barang" autocomplete="off"></el-input>
+          </el-form-item>
+        </el-form>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="cancel_dialogvisiblebarang" size="mini">Cancel</el-button>
+        <el-button type="primary" :loading="get_loading_1" @click="submit_dialogvisiblebarang" size="mini">Submit</el-button>
+      </span>
+    </el-dialog>
+    <el-dialog title="Update Barang" :visible.sync="updatedialogvisiblebarang" width="50%" :before-close="close_updatedialogvisiblebarang">
+      <div>
+        <el-form>
+          <el-form-item label="Nama Barang" :label-width="formLabelWidthBarang">
+            <el-input v-model="form.nama_barang" autocomplete="off"></el-input>
+          </el-form-item>
+        </el-form>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="cancel_updatedialogvisiblebarang" size="mini">Cancel</el-button>
+        <el-button type="primary" :loading="get_loading_1" @click="submit_updatedialogvisiblebarang(barang.id)" size="mini">Submit</el-button>
+      </span>
+    </el-dialog>
+    <el-dialog title="Warning" :visible.sync="deletedialogvisiblebarang" width="30%" :before-close="close_deletedialogvisiblebarang" center>
+      <div>
+        <p class="text-center">Yakin <span class="font-semibold">{{ barang.nama_barang }}</span> dihapus?</p>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button size="mini" @click="cancel_deletedialogvisiblebarang">Cancel</el-button>
+        <el-button type="danger" size="mini" :loading="get_loading_1" @click="submit_deletedialogvisiblebarang(barang.id)">Delete</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 <script>
@@ -114,29 +171,44 @@ export default {
     return {
       activeName: 'first',
       dialogvisible: false,
-      deletedialogvisible: false,
       updatedialogvisible: false,
+      deletedialogvisible: false,
+      dialogvisiblebarang: false,
+      updatedialogvisiblebarang: false,
+      deletedialogvisiblebarang: false,
       form: {
         name: null,
         username: null,
         password: null,
         email: null,
-        status: false
+        status: false,
+        kode_barang: null,
+        nama_barang: null,
+        id_user: null
       },
       user: {id: null, name: null, username: null, status: 0},
-      formLabelWidth: '90px'
+      barang: {id: null, kode_barang: null, nama_barang: null},
+      formLabelWidth: '90px',
+      formLabelWidthBarang: '100px'
     }
   },
   computed: {
     get_users() {
       return this.$store.state.pengguna.user
     },
+    get_barangs() {
+      return this.$store.state.barang.barang
+    },
     get_loading() {
       return this.$store.state.pengguna.loading
+    },
+    get_loading_1() {
+      return this.$store.state.barang.loading
     }
   },
   created() {
     this.$store.dispatch('pengguna/get_users')
+    this.$store.dispatch('barang/get_barangs')
   },
   methods: {
     open_dialogvisible: function() {
@@ -195,6 +267,70 @@ export default {
     },
     cancel_updatedialogvisible: function() {
       this.updatedialogvisible = false;
+    },
+    open_dialogvisiblebarang: function() {
+      this.dialogvisiblebarang = true;
+      this.form.kode_barang = null;
+      this.form.nama_barang = null;
+      this.form.id_user = null;
+    },
+    close_dialogvisiblebarang: function() {
+      this.dialogvisiblebarang = false;
+    },
+    submit_dialogvisiblebarang: function() {
+      this.$store.dispatch('barang/tambah_barang', {kode_barang: this.generate_string(5), nama_barang: this.form.nama_barang, id_user: 1})
+      .then(() => {
+        this.dialogvisiblebarang = false;
+        this.$store.dispatch('barang/get_barangs')
+      })
+    },
+    cancel_dialogvisiblebarang: function() {
+      this.dialogvisiblebarang = false;
+    },
+    open_updatedialogvisiblebarang: function(id, nama_barang) {
+      this.updatedialogvisiblebarang = true;
+      this.form.nama_barang = nama_barang;
+      this.barang.id = id;
+    },
+    close_updatedialogvisiblebarang: function() {
+      this.updatedialogvisiblebarang = false;
+    },
+    submit_updatedialogvisiblebarang: function(id) {
+      this.$store.dispatch('barang/update_barang', {nama_barang: this.form.nama_barang, id: id})
+      .then(() => {
+        this.updatedialogvisiblebarang = false;
+        this.$store.dispatch('barang/get_barangs')
+      })
+    },
+    cancel_updatedialogvisiblebarang: function() {
+      this.updatedialogvisiblebarang = false;
+    },
+    open_deletedialogvisiblebarang: function(id, nama_barang) {
+      this.deletedialogvisiblebarang = true;
+      this.barang.id = id;
+      this.barang.nama_barang = nama_barang;
+    },
+    close_deletedialogvisiblebarang: function() {
+      this.deletedialogvisiblebarang = false;
+    },
+    submit_deletedialogvisiblebarang: function(id) {
+      this.$store.dispatch('barang/delete_barang', {id: id})
+      .then(() => {
+        this.deletedialogvisiblebarang = false;
+        this.$store.dispatch('barang/get_barangs')
+      })
+    },
+    cancel_deletedialogvisiblebarang: function() {
+      this.deletedialogvisiblebarang = false;
+    },
+    generate_string: function(length) {
+      let result = '';
+      const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      const charactersLength = characters.length;
+      for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
     }
   },
 }
