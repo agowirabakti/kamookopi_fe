@@ -4,6 +4,12 @@
       <el-breadcrumb-item :to="{ path: '/dashboard' }">Dashboard</el-breadcrumb-item>
       <el-breadcrumb-item>Laporan</el-breadcrumb-item>
     </el-breadcrumb>
+    <el-tabs v-model="activeName" type="border-card">
+      <el-tab-pane class="font-4" name="first" label="Laporan Barang">Laporan Barang</el-tab-pane>
+      <el-tab-pane class="font-4" name="second" label="Laporan Barang Masuk">Laporan Barang Masuk</el-tab-pane>
+      <el-tab-pane class="font-4" name="thirth" label="Laporan Barang Keluar">Laporan Barang Keluar</el-tab-pane>
+      <el-tab-pane class="font-4" name="forth" label="History Barang">History Barang</el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 <script>

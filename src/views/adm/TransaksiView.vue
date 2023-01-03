@@ -4,6 +4,9 @@
       <el-breadcrumb-item :to="{ path: '/dashboard' }">Dashboard</el-breadcrumb-item>
       <el-breadcrumb-item>Transaksi</el-breadcrumb-item>
     </el-breadcrumb>
+    <el-tabs v-model="activeName" type="border-card">
+      <el-tab-pane class="font-4" name="first" label="Kelola Barang">Kelola Barang</el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 <script>
