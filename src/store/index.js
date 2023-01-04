@@ -3,6 +3,9 @@ import Vuex from 'vuex'
 import Axios from 'axios'
 import pengguna from './modules/user'
 import barang from './modules/barang'
+import kelola from './modules/kelola'
+import masuk from './modules/masuk'
+import keluar from './modules/keluar'
 
 Vue.use(Vuex)
 
@@ -73,6 +76,9 @@ export default new Vuex.Store({
   },
   modules: {
     pengguna,
-    barang
+    barang,
+    kelola,
+    masuk,
+    keluar
   }
 })
