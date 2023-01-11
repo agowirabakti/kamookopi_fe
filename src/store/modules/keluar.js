@@ -65,6 +65,55 @@ const actions = {
         reject(error)
       })
     })
+  },
+  delete_keluar: function({commit, state}, data) {
+    commit('SET_LOADING', true)
+    return new Promise((resolve, reject) => {
+      let headers = {'x-access-token': sessionStorage.getItem('token')}
+      let url = state.host+"/api/keluars/"+data.id;
+      Axios.delete(url, {headers: headers})
+      .then(response => {
+        commit('SET_LOADING', false)
+        resolve(response)
+      })
+      .catch(error => {
+        if (error.response.status == 401) {
+          commit('SET_LOGOUT')
+          sessionStorage.removeItem('token')
+          delete Axios.defaults.headers.common['x-access-token']
+          this.$router.push({name: 'login'})
+        }
+        reject(error)
+      })
+    })
+  },
+  getkeluars: function({commit, state}, data) {
+    commit('SET_LOADING', true)
+    return new Promise((resolve, reject) => {
+      let headers = {'x-access-token': sessionStorage.getItem('token')}
+      let url = state.host+"/api/keluars/"+data.id;
+      if (data.id != null) {
+        Axios.get(url, {headers: headers})
+        .then(response => {
+          const data = response.data;
+          // console.log(data);
+          commit('SET_LOADING', false)
+          commit('SET_KELUAR', data)
+          resolve(response)
+        })
+        .catch(error => {
+          if (error.response.status == 401) {
+            commit('SET_LOGOUT')
+            sessionStorage.removeItem('token')
+            delete Axios.defaults.headers.common['x-access-token']
+            this.$router.push({name: 'login'})
+          }
+          reject(error)
+        })
+      }
+      commit('SET_KELUAR', {})
+      commit('SET_LOADING', false)
+    })
   }
 }
 

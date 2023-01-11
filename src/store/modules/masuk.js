@@ -65,7 +65,56 @@ const actions = {
         reject(error)
       })
     })
-  }
+  },
+  delete_masuk: function({commit, state}, data) {
+    commit('SET_LOADING', true)
+    return new Promise((resolve, reject) => {
+      let headers = {'x-access-token': sessionStorage.getItem('token')}
+      let url = state.host+"/api/masuks/"+data.id;
+      Axios.delete(url, {headers: headers})
+      .then(response => {
+        commit('SET_LOADING', false)
+        resolve(response)
+      })
+      .catch(error => {
+        if (error.response.status == 401) {
+          commit('SET_LOGOUT')
+          sessionStorage.removeItem('token')
+          delete Axios.defaults.headers.common['x-access-token']
+          this.$router.push({name: 'login'})
+        }
+        reject(error)
+      })
+    })
+  },
+  getmasuks: function({commit, state}, data) {
+    commit('SET_LOADING', true)
+    return new Promise((resolve, reject) => {
+      let headers = {'x-access-token': sessionStorage.getItem('token')};
+      let url = state.host+"/api/masuks/"+data.id;
+      if (data.id != null) {
+        Axios.get(url, {headers: headers})
+        .then(response => {
+          const data = response.data;
+          // console.log(data);
+          commit('SET_LOADING', false)
+          commit('SET_MASUK', data)
+          resolve(response)
+        })
+        .catch(error => {
+          if (error.response.status == 401) {
+            commit('SET_LOGOUT')
+            sessionStorage.removeItem('token')
+            delete Axios.defaults.headers.common['x-access-token']
+            this.$router.push({name: 'login'})
+          }
+          reject(error)
+        }) 
+      }
+      commit('SET_MASUK', {})
+      commit('SET_LOADING', false)
+    })
+  },
 }
 
 export default {

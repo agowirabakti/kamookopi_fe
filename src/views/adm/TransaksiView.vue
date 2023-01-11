@@ -38,7 +38,7 @@
             <div v-for="(item, index) in get_kelolas" :key="index">
               <div class="flex justify-between items-center py-2 hover:bg-gray-50 cursor-pointer border-b">
                 <div class="w-64">
-                  <p class="font-4" v-if="item.barangId == null">Tidak nama barang</p>
+                  <p class="font-4" v-if="item.barangId == null">Tidak kode barang</p>
                   <p class="font-4 uppercase" v-if="item.barangId != null">{{ item.barang.kode_barang }}</p>
                 </div>
                 <div class="w-1/2">
@@ -162,6 +162,9 @@ export default {
     get_kelolas() {
       return this.$store.state.kelola.kelola
     },
+    // get_kata() {
+    //   return this.$store.state.kelola.kata
+    // },
     get_barangs() {
       return this.$store.state.barang.barang
     },
@@ -189,8 +192,11 @@ export default {
       console.log(this.form);
       this.$store.dispatch('kelola/tambah_kelola', {nama_barang: this.form.nama_barang, stok: this.form.stok})
       .then(() => {
-        this.dialogvisible = false;
-        this.$store.dispatch('kelola/get_kelolas')
+        // this.$store.dispatch('masuk/tambah_masuk', {kelola_id: response.data.id, stok: this.form.stok})
+        // .then(() => {
+          this.dialogvisible = false;
+          this.$store.dispatch('kelola/get_kelolas')
+        // })
       })
     },
     cancel_dialogvisible: function() {
@@ -205,12 +211,98 @@ export default {
       this.deletedialogvisible = false;
     },
     submit_deletedialogvisible: function(id) {
+      // this.$store.dispatch('masuk/getmasuks', {id: id})
+      // .then(response => {
+      //   let masuk = response.data;
+      //   if (masuk.length > 0) {
+      //     this.$store.dispatch('masuk/delete_masuk', {id: id})
+      //     .then(() => {
+      //       this.$store.dispatch('keluar/getkeluars', {id: id})
+      //       .then(response => {
+      //         let keluar = response.data;
+      //         if (keluar.length > 0) {
+      //           this.$store.dispatch('keluar/delete_keluar', {id: id})
+      //           .then(() => {
+      //             this.$store.dispatch('kelola/delete_kelola', {id: id})
+      //             .then(() => {
+      //               this.deletedialogvisible = false;
+      //               this.$store.dispatch('kelola/get_kelolas')
+      //             })
+      //           })
+      //         }
+      //         // console.log();
+      //       })
+      //     })
+      //   } else {
+      //     this.$store.dispatch('keluar/getkeluars', {id: id})
+      //     .then(response => {
+      //       let keluar = response.data;
+      //       if (keluar.length > 0) {
+      //         this.$store.dispatch('keluar/delete_keluar', {id: id})
+      //         .then(() => {
+      //           this.$store.dispatch('kelola/delete_kelola', {id: id})
+      //           .then(() => {
+      //             this.deletedialogvisible = false;
+      //             this.$store.dispatch('kelola/get_kelolas')
+      //           })
+      //         })
+      //       } else {
+      //         this.$store.dispatch('kelola/delete_kelola', {id: id})
+      //         .then(() => {
+      //           this.deletedialogvisible = false;
+      //           this.$store.dispatch('kelola/get_kelolas')
+      //         })
+      //       }
+      //       // console.log();
+      //     })
+      //   }
+      //   // console.log();
+      // })
+
+      // this.$store.dispatch('keluar/getkeluars', {id: id})
+      // .then(response => {
+      //   let keluar = response.data;
+      //   if (keluar.length > 0) {
+      //     this.$store.dispatch('keluar/delete_keluar', {id: id})
+      //     .then(() => {
+            
+      //     })
+      //   }
+      //   // console.log();
+      // })
+
       this.$store.dispatch('kelola/delete_kelola', {id: id})
       .then(() => {
         this.deletedialogvisible = false;
         this.$store.dispatch('kelola/get_kelolas')
       })
     },
+    // submit_deletemasuk: function(id) {
+    //   this.$store.dispatch('masuk/getmasuks', {id: id})
+    //   .then(response => {
+    //     let masuk = response.data;
+    //     if (masuk.length > 0) {
+    //       this.$store.dispatch('masuk/delete_masuk', {id: id})
+    //       .then(() => {
+    //         return 1;
+    //       })
+    //     }
+    //     // console.log();
+    //   })
+    // },
+    // submit_deletekeluar: function(id) {
+    //   this.$store.dispatch('keluar/getkeluars', {id: id})
+    //   .then(response => {
+    //     let keluar = response.data;
+    //     if (keluar.length > 0) {
+    //       this.$store.dispatch('keluar/delete_keluar', {id: id})
+    //       .then(() => {
+    //         return 1;
+    //       })
+    //     }
+    //     // console.log();
+    //   })
+    // },
     cancel_deletedialogvisible: function() {
       this.deletedialogvisible = false;
     },

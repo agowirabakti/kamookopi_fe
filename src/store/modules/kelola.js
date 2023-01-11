@@ -2,6 +2,7 @@ import Axios from 'axios'
 
 const state = () => ({
   kelola: {},
+  kata: {},
   loading: false,
   host: "http://localhost:3000"
 })
@@ -9,6 +10,9 @@ const state = () => ({
 const mutations = {
   SET_KELOLA(state, kelola) {
     state.kelola = kelola
+  },
+  SET_KATA(state, kata) {
+    state.kata = kata
   },
   SET_LOADING(state, loading) {
     state.loading = loading
@@ -53,6 +57,7 @@ const actions = {
       Axios.post(url, data_kelola, {headers: headers})
       .then(response => {
         commit('SET_LOADING', false)
+        // commit('SET_KATA', response.data)
         resolve(response)
       })
       .catch(error => {
